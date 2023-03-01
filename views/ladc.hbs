@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LADC</title>
+
+    <link rel="stylesheet" href="cb/style.css">
+</head>
+
+<body>
+    <nav>
+        <label class="logo">Samadhan</label>
+        <ul>
+           <li><a class="active" href="/afterloginHome">Home</a></li>
+           <li>
+              <a href="#">Core-members
+              <i class="fas fa-caret-down"></i>
+              </a>
+              <ul>
+                 <li><a href="#"> Ankit kumar</a></li>
+                 <li><a href="#">Ayush rathore</a></li>
+                 <li><a href="#">Vikash gupta</a></li>
+                 <li><a href="#">Malika</a></li>
+              </ul>
+           </li>
+           <li>
+              <a href="#">Events
+              <i class="fas fa-caret-down"></i>
+              </a>
+              <ul>
+                 <li><a href="#">past-events </a></li>
+                 <li><a href="#">upcomming</a></li>
+                 <li>
+                    <a href="#">About-us
+                    <i class="fas fa-caret-right"></i>
+                    </a>
+                    <ul>
+                       <li><a href="#">Awards</a></li>
+                       <li><a href="#">National</a></li>
+                       <li><a href="#">past-Allum</a></li>
+                    </ul>
+                 </li>
+              </ul>
+           </li>
+           <li><a href="/contact">Contact</a></li>
+           <li><a href="/feedback">Feedback</a></li>
+        </ul>
+     </nav>
+    <div id="wrapper">
+        <div class="container" id="home">
+            <div class="heading-section">
+                <div class="heading-left">
+                    <img src="cb/image/1...jpg" alt="">
+                </div>
+                <div class="heading-centre">
+                    <div class="club-name">
+                        LADC
+                    </div>
+                    <div class="club-quote">
+                        Excellence in oratory !!
+                    </div>
+                    <!-- <div class="college-name">
+                        Dr B R Ambedkar National Institute of Technology, Jalandhar
+                    </div> -->
+                </div>
+                <div class="heading-right">
+                    <img src="cb/images/LogoNIT1.png" alt="">
+                </div>
+
+            </div>
+
+            <!-- <div class="navbar">
+                <div class="nav-items">
+                    <div class="nav-item-link"><a target="_blank" href="https://www.nitj.ac.in">NITJ</a></div>
+                    <div class="nav-item-link"><a href="#home">Home</a></div>
+                    <div class="nav-item-link"><a href="#Machine learning">Events</a></div>
+                    <div class="nav-item-link"><a href="#aboutUsi">About-Us</a></div>
+                    <div class="nav-item-link"><a href="#Core">Core-Member</a></div>
+
+                </div>
+            </div> -->
+
+            <div class="aboutUs-section" id="aboutUsi">
+                <div class="aboutUs-section-item" id="aboutUs">
+                    <h2 class="aboutUs-section-heading">About Us</h2>
+                    <br>
+                    <p class="aboutUs-section-desc"> :Ladc is official literary and debating club of nit jalandhar dedicated to excellence in all forms of oratory and litracy.</p>
+
+                </div>
+                <div class="aboutUs-section-item" id="vision">
+                    <h2 class="aboutUs-section-heading">Vision</h2>
+                    <br>
+                    <p class="aboutUs-section-desc">:To become most leading and best debating club helping the students in building good debating skills.
+                        .</p>
+
+                </div>
+                <div class="aboutUs-section-item" id="mission">
+                    <h2 class="aboutUs-section-heading">Mission</h2>
+                    <br>
+                    <p class="aboutUs-section-desc"> To encourage the students for participating in various oratory and debating events.</p>
+
+                </div>
+            </div>
+            <!-- <div class="content-section">
+                <div class="aboutUs-section-heading">
+                    <h2>Events</h2>
+                </div>
+                <div class="content">
+                    <div class="content-image-box">
+                        <img src="https://picsum.photos/seed/picsum/200/300" alt="content-img">
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, consectetur in, omnis fuga maiores officiis eaque odit ullam assumenda minus sapiente dolor atque voluptatem eos hic reprehenderit. Optio dolorum quibusdam nemo, eos inventore modi dicta quas delectus asperiores consequuntur dolorem voluptatem nisi vel unde laboriosam ipsam. Quis veniam saepe ullam?
+                    </p>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div> -->
+    <div class="chat-popup" id="myForm">
+        <form action="/clubs/ladc/" class="form-container">
+          <h1>Information Box</h1>
+      
+          <label for="msg"><b>Message</b></label>
+          <textarea placeholder="" name="message" required></textarea>
+      
+          <!-- <button type="submit" class="btn">Send</button> -->
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+      <style>
+
+
+        {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.form-popup {
+    position: relative;
+  display: none;
+  position:relative;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    border-radius: 30%;
+  max-width: 1400px;
+  padding: 10px;
+  padding-right: 200px;
+  padding-left: 200px;
+  background-color: rgb(192, 241, 69);
+  margin-top: 3em;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #2f6dda;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: rgb(59, 182, 234);
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 200% 200%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+.heading-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 200px;
+    width: 90%;
+    margin: auto;
+}
+.heading-left{
+    width: 10%;
+    height: 140px;
+    margin-top: 1em;
+    margin-left: 2em;
+    
+}
+.heading-left img{
+    width: 100%;
+    height: 100%;
+}
+.heading-centre{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2em;
+    padding: 0.5em;
+}
+.club-name{
+    font-size: 4em;
+    font-weight: bold;
+    color: #0E74A5;
+}
+.club-quote{
+    align-self: center;
+    font-size: 1.2em;
+}
+.college-name{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.heading-left img{
+    border-radius: 50%;
+}
+.heading-right{
+    width: 10%;
+    height: 150px;
+    margin-right: 2em;
+    margin-top: 1em;
+}
+.heading-right img{
+    width: 100%;
+    height: 100%;
+}
+nav .logo{
+    color: white;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 70px;
+    padding-left: 110px;
+  }
+  nav{
+    height: 70px;
+    background: #445504;
+    box-shadow: 0 3px 15px rgba(223, 5, 5, 0.4);
+  }
+  nav ul{
+    float: right;
+    margin-right: 30px;
+  }
+  nav ul li{
+    display: inline-block;
+  }
+  nav ul li a{
+    color: white;
+    display: block;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px;
+    background: #406d04;
+    transition: .5s;
+  }
+  nav ul li a:hover,
+  nav ul li a.active{
+    color: #23dbdb;
+  }
+  nav ul ul{
+    position: absolute;
+    top: 85px;
+    border-top: 3px solid #23dbdb;
+    opacity: 0;
+    visibility: hidden;
+  }
+  nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+  }
+  nav ul ul li{
+    width: 150px;
+    display: list-item;
+    position: relative;
+    border: 1px solid #042331;
+    border-top: none;
+  }
+  nav ul ul li a{
+    line-height: 50px;
+  }
+  nav ul ul ul{
+    border-top: none;
+  }
+  nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+  }
+  nav ul ul li a i{
+    margin-left: 45px;
+  }
+  section{
+    background: url(bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+
+.navbar{
+    background-image: linear-gradient(to right, #4a249e, #57bbf2);
+    display:flex;
+    justify-content:flex-end;
+    width:100%;
+    padding:1.5rem;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+
+.nav-items{
+    display:flex;
+    gap:2rem;
+    padding:0 4em;
+  }
+  
+  .nav-items div {
+    font-size:22px;
+    font-weight:500;
+    cursor:pointer;
+  }
+  a{
+    text-decoration: none;
+  }
+  .nav-items div a{
+    color:rgb(166, 11, 11);
+    color: black;
+  }
+  .sub-menu-1{
+    display: none}
+  .nav-items div a:hover .sub-menu-1{
+    color: white;
+    display:block;
+    position: absolute;
+    background: rgb(0,100,0);
+    margin-top: 15px;
+    margin-left: -15px;
+  }
+  .nav-items div:hover{
+    /* transition: 0.2s; */
+    font-weight: bold;
+    display:block;
+    position: absolute;
+    background: rgb(0,100,0);
+    margin-top: 15px;
+    margin-left: -15px;
+    
+  }
+  
+  /* .nav-items-link a:hover .sub-menu-1{
+    
+  } */
+
+.aboutUs-section{
+    height: 250px;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2em;
+    scroll-behavior: auto;
+}
+.aboutUs-section-item{
+    
+    box-shadow: 1px 1px 8px gray;
+    background-color: gainsboro;
+    border-radius: 15px;
+    width: 30%;
+}
+.aboutUs-section-heading{
+    color: #3F0678;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.2em;
+}
+.aboutUs-section-desc{
+    font-size: 1.2em;
+    padding: 0.2em;
+}
+.content-section{
+    width: 80%;
+    height: 700px;
+    margin: auto;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+.content-section h2{
+    text-decoration: underline;
+    
+}
+.content-image-box{
+    width: 70%;
+    margin: auto;
+    height: 400px;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    border-radius: 15px;
+}
+.content-image-box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.content{
+    width: 50%;
+    margin: auto;
+    margin-top: 0;
+    height: 500px;
+    box-shadow: 2px 2px 8px grey;
+}
+.content p{
+    margin: 1em;
+    font-size: 1.2em;
+}
+
+      </style>
+      <script>
+        function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+      </script>
+    {{!-- <script src="main.js"></script> --}}
+</body>
+
+</html>

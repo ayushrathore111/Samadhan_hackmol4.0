@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>home</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="home.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <a href="Youtube.com" class="logo"> <img src="images\logo hkml-modified.png" width="50px" height="50px"/> </a>
+   <!-- <i class="fas fa-lightbulb"></i> -->
+   <!-- <img src="images\logo hkml-modified.png"/> -->
+
+   <nav class="navbar">
+      <div id="close-navbar" class="fas fa-times"></div>
+      <a href="/afterloginHome">home</a>
+      <a href="/about">about</a>
+      <a href="/courses">Internship</a>
+      <a href="/contact">contact</a>
+   </nav>
+
+   <div class="icons">
+       <img id="faltu" src={{url}} width="50px" height="50px"/> 
+       <div id="account-btn" class="fas fa-user"></div>
+      <div id="menu-btn" class="fas fa-bars"></div> 
+   </div>
+
+</header>
+
+<!-- account form section starts  -->
+
+<div class="account-form">
+
+   <div id="close-form" class="fas fa-times"></div>
+
+   <div class="buttons">
+      <span class="btn active login-btn">login</span>
+      <span class="btn register-btn">register</span>
+   </div>
+
+   <form class="login-form active" action="">
+      <h3>login now</h3>
+      <input type="email" placeholder="enter your email" class="box">
+      <input type="password" placeholder="enter your password" class="box">
+      <div class="flex">
+         <input type="checkbox" name="" id="remember-me">
+         <label for="remember-me">remember me</label>
+         <a href="/resetPassword">forgot password?</a>
+      </div>
+      <input type="submit" value="login now" class="btn">
+   </form>
+
+   <form class="register-form" action="">
+      <h3>register now</h3>
+      <input type="email" placeholder="enter your email" class="box">
+      <input type="password" placeholder="enter your password" class="box">
+      <input type="password" placeholder="confirm your password" class="box">
+      <input type="submit" value="register now" class="btn">
+   </form>
+
+</div>
+
+<!-- account form section ends -->
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home">
+
+   <div class="swiper home-slider">
+      
+      <div class="swiper-wrapper">
+
+         <section class="swiper-slide slide" style="background: url(images/home-slide-1.jpg) no-repeat;">
+            <div class="content">
+               <h3>Explore All the clubs at one place</h3>
+               <p>Providing inovative platform for all the clubs, where we can explore clubs, intract and can get important information at same place </p>
+               <a href="/clubs" class="btn">Explore</a>
+            </div>
+         </section>
+         <section class="swiper-slide slide" style="background: url(images/int..jpg) no-repeat;">
+            <div class="content">
+               <h3>All Internship realted information at one place</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit labore dolore unde, quidem corrupti?</p>
+               <a href="/courses" class="btn">Get-Info</a>
+            </div>
+         </section>
+
+         <section class="swiper-slide slide" style="background: url(images/foodll.jpg) no-repeat;">
+            <div class="content">
+               <h3>Get best Review ,order Best food</h3>
+               <p>Review of all Food item of snackers,NC,CC,yadav at one place </p>
+               <a href="/food" class="btn">Get-Review</a>
+            </div>
+         </section>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+   </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- subjects section starts  -->
+
+<!-- <section class="subjects">
+
+   <h1 class="heading">our popular subjects</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/subject-icon-1.png" alt="">
+         <h3>graphic design</h3>
+         <p>12 modules</p>
+      </div>
+
+      <div class="box">
+         <img src="images/subject-icon-2.png" alt="">
+         <h3>mathemetics</h3>
+         <p>12 modules</p>
+      </div>
+
+      <div class="box">
+         <img src="images/subject-icon-3.png" alt="">
+         <h3>teaching</h3>
+         <p>12 modules</p>
+      </div>
+
+      <div class="box">
+         <img src="images/subject-icon-4.png" alt="">
+         <h3>development</h3>
+         <p>12 modules</p>
+      </div>
+
+      <div class="box">
+         <img src="images/subject-icon-5.png" alt="">
+         <h3>science</h3>
+         <p>12 modules</p>
+      </div>
+
+      <div class="box">
+         <img src="images/subject-icon-6.png" alt="">
+         <h3>engineering</h3>
+         <p>12 modules</p>
+      </div>
+
+   </div>
+
+</section> -->
+
+<!-- subjects section ends -->
+
+<!-- home courses slider section starts  -->
+
+<section class="home-courses">
+
+   <h1 class="heading"> our Services </h1>
+
+   <div class="swiper home-courses-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images\Internship-scaled.jpg" alt="">
+               <h3>Internship</h3>
+            </div>
+            <div class="content">
+               <h3>Internship-info</h3>
+               <p>“The only person you are destined to become is the person you decide to be.</p>
+               <a href="/courses" class="btn">Explore</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images\clubff.jpg" alt="">
+               <h3>Club-NITJ</h3>
+            </div>
+            <div class="content">
+               <h3>Student-club</h3>
+               <p>Student club plays very important role in personality dvelopement as well as skill development in collage and connect like minded people</p>
+               <a href="/clubs" class="btn">Explore</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images\foodr.jpg" alt="">
+               <h3>Food - Review</h3>
+            </div>
+            <div class="content">
+               <h3>Review-Review</h3>
+               <p>Proving Rating of every food items. Making your choice of best food easy and making easy to decide what to eat and from where(snackers, NC ,CC ,yadav</p>
+               <a href="/food" class="btn">Explore</a>
+            </div>
+         </div>
+
+         <!-- <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/course-1-4.png" alt="">
+               <h3>web development</h3>
+            </div>
+            <div class="content">
+               <h3>web development</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ratione?</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/course-1-5.png" alt="">
+               <h3>web development</h3>
+            </div>
+            <div class="content">
+               <h3>web development</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ratione?</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/course-1-6.png" alt="">
+               <h3>web development</h3>
+            </div>
+            <div class="content">
+               <h3>web development</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ratione?</p>
+               <a href="#" class="btn">read more</a>
+            </div> -->
+         <!-- </div> -->
+
+      </div>
+
+   </div>
+
+</section>
+
+<!-- home courses slider section ends -->
+
+
+
+
+
+
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <h3> <i class="fas fa-circle"></i> Samadhan </h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, voluptatem.</p>
+         <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+         </div>
+      </div>
+
+      <div class="box">
+         <h3>Header link</h3>
+         <a href="home.html" class="link">home</a>
+         <a href="about.html" class="link">about</a>
+         <a href="courses.html" class="link">Internship</a>
+         <a href="contact.html" class="link">contact</a>
+      </div>
+
+      <div class="box">
+         <h3>Services</h3>
+         <a href="#" class="link">Club</a>
+         <a href="#" class="link">Internship</a>
+         <a href="#" class="link">canteen Review</a>
+         <a href="#" class="link">About</a>
+      </div>
+
+      <div class="box">
+         <h3>newsletter</h3>
+         <p>subscribe for latest upadates</p>
+         <form action="">
+            <input type="email" name="" placeholder="enter your email" id="" class="email">
+            <input type="submit" value="subscribe" class="btn">
+         </form>
+      </div>
+
+   </div>
+
+   <div class="credit"> created by <span>Team Optimizers with Love</span> | all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+<!-- swiper js link  -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+</body>
+</html>

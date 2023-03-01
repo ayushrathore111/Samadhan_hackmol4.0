@@ -1,0 +1,545 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDSC</title>
+
+    <link rel="stylesheet" href="gdsc.css">
+</head>
+
+<body>
+    <nav>
+        <label class="logo">Samadhan</label>
+        <ul>
+           <li><a class="active" href="/afterloginHome">Home</a></li>
+           <li>
+              <a href="#">Core-members
+              <i class="fas fa-caret-down"></i>
+              </a>
+              <ul>
+                 <li><a href="#"> Ankit kumar</a></li>
+                 <li><a href="#">Ayush rathore</a></li>
+                 <li><a href="#">Vikash gupta</a></li>
+                 <li><a href="#">Malika</a></li>
+              </ul>
+           </li>
+           <li>
+              <a href="#">Events
+              <i class="fas fa-caret-down"></i>
+              </a>
+              <ul>
+                 <li><a href="#">past-events </a></li>
+                 <li><a href="#">upcomming</a></li>
+                 <li>
+                    <a href="#">About-us
+                    <i class="fas fa-caret-right"></i>
+                    </a>
+                    <ul>
+                       <li><a href="#">Awards</a></li>
+                       <li><a href="#">National</a></li>
+                       <li><a href="#">past-Allum</a></li>
+                    </ul>
+                 </li>
+              </ul>
+           </li>
+           <li><a href="/contact">Contact</a></li>
+           <li><a href="/feedback">Feedback</a></li>
+        </ul>
+     </nav>
+    <div id="wrapper">
+        <div class="container" id="home">
+            <div class="heading-section">
+                <div class="heading-left">
+                    <img src="https://avatars.githubusercontent.com/u/123330221?s=200&v=4" alt="helloo" width="50px" height="40px">
+                </div>
+                <div class="heading-centre">
+                    <div class="club-name">
+                        GDSC
+                    </div>
+                    <div class="club-quote">
+                        Eat sleep code repeat !!
+                    </div>
+                    <!-- <div class="college-name">
+                    
+                    </div> -->
+                </div>
+                <div class="heading-right">
+                    <img src="data:image/jpeg;base64,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" alt="">
+                </div>
+
+            </div>
+
+            <!-- <div class="navbar">
+                <div class="nav-items">
+                    <div class="nav-item-link"><a target="_blank" href="https://www.nitj.ac.in">NITJ</a></div>
+                    <div class="nav-item-link"><a href="#home">Home</a></div>
+                    <div class="nav-item-link"><a href="#Machine learning">Events</a></div>
+                    <div class="nav-item-link"><a href="#aboutUsi">About-Us</a></div>
+                    <div class="nav-item-link"><a href="#Core">Core-Member</a></div>
+
+                </div>
+            </div> -->
+
+            <div class="aboutUs-section" id="aboutUsi">
+                <div class="aboutUs-section-item" id="aboutUs">
+                    <h2 class="aboutUs-section-heading">About Us</h2>
+                    <br>
+                    <p class="aboutUs-section-desc"> google developer student clubs are university based community groups for students interested
+                        in Google developer technologies.students from all undergraudate or graduate programs with an interest
+                        in growing as a developer are welcome</p>
+
+                </div>
+                <div class="aboutUs-section-item" id="vision">
+                    <h2 class="aboutUs-section-heading">Vision</h2>
+                    <br>
+                    <p class="aboutUs-section-desc">To become one of the best gdsc club across india serving best developers and programmers to nation.
+                        .</p>
+
+                </div>
+                <div class="aboutUs-section-item" id="mission">
+                    <h2 class="aboutUs-section-heading">Mission</h2>
+                    <br>
+                    <p class="aboutUs-section-desc"> To encourage students towards different technologies and help them in acing the world of technology.</p>
+
+                </div>
+            </div>
+            <!-- <div class="content-section">
+                <div class="aboutUs-section-heading">
+                    <h2>Events</h2>
+                </div>
+                <div class="content">
+                    <div class="content-image-box">
+                        <img src="https://picsum.photos/seed/picsum/200/300" alt="content-img">
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, consectetur in, omnis fuga maiores officiis eaque odit ullam assumenda minus sapiente dolor atque voluptatem eos hic reprehenderit. Optio dolorum quibusdam nemo, eos inventore modi dicta quas delectus asperiores consequuntur dolorem voluptatem nisi vel unde laboriosam ipsam. Quis veniam saepe ullam?
+                    </p>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div> -->
+    <div class="chat-popup" id="myForm">
+        <form action="/clubs/gdsc" class="form-container">
+          <h1>Information Box</h1>
+      
+          <label for="msg"><b>Message</b></label>
+          <textarea placeholder="" name="message" required></textarea>
+      
+          <!-- <button type="submit" class="btn">Send</button> -->
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+      <style>
+
+
+        {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.form-popup {
+    position: relative;
+  display: none;
+  position:relative;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    border-radius: 30%;
+  max-width: 1400px;
+  padding: 10px;
+  padding-right: 200px;
+  padding-left: 200px;
+  background-color: rgb(192, 241, 69);
+  margin-top: 3em;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #2f6dda;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: rgb(59, 182, 234);
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 200% 200%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+.heading-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 200px;
+    width: 90%;
+    margin: auto;
+}
+.heading-left{
+    width: 10%;
+    height: 140px;
+    margin-top: 1em;
+    margin-left: 2em;
+    
+}
+.heading-left img{
+    width: 100%;
+    height: 100%;
+}
+.heading-centre{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2em;
+    padding: 0.5em;
+}
+.club-name{
+    font-size: 4em;
+    font-weight: bold;
+    color: #0E74A5;
+}
+.club-quote{
+    align-self: center;
+    font-size: 1.2em;
+}
+.college-name{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.heading-left img{
+    border-radius: 50%;
+}
+.heading-right{
+    width: 10%;
+    height: 150px;
+    margin-right: 2em;
+    margin-top: 1em;
+}
+.heading-right img{
+    width: 100%;
+    height: 100%;
+}
+nav .logo{
+    color: white;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 70px;
+    padding-left: 110px;
+  }
+  nav{
+    height: 70px;
+    background: #445504;
+    box-shadow: 0 3px 15px rgba(223, 5, 5, 0.4);
+  }
+  nav ul{
+    float: right;
+    margin-right: 30px;
+  }
+  nav ul li{
+    display: inline-block;
+  }
+  nav ul li a{
+    color: white;
+    display: block;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px;
+    background: #406d04;
+    transition: .5s;
+  }
+  nav ul li a:hover,
+  nav ul li a.active{
+    color: #23dbdb;
+  }
+  nav ul ul{
+    position: absolute;
+    top: 85px;
+    border-top: 3px solid #23dbdb;
+    opacity: 0;
+    visibility: hidden;
+  }
+  nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+  }
+  nav ul ul li{
+    width: 150px;
+    display: list-item;
+    position: relative;
+    border: 1px solid #042331;
+    border-top: none;
+  }
+  nav ul ul li a{
+    line-height: 50px;
+  }
+  nav ul ul ul{
+    border-top: none;
+  }
+  nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+  }
+  nav ul ul li a i{
+    margin-left: 45px;
+  }
+  section{
+    background: url(bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+
+.navbar{
+    background-image: linear-gradient(to right, #4a249e, #57bbf2);
+    display:flex;
+    justify-content:flex-end;
+    width:100%;
+    padding:1.5rem;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+
+.nav-items{
+    display:flex;
+    gap:2rem;
+    padding:0 4em;
+  }
+  
+  .nav-items div {
+    font-size:22px;
+    font-weight:500;
+    cursor:pointer;
+  }
+  a{
+    text-decoration: none;
+  }
+  .nav-items div a{
+    color:rgb(166, 11, 11);
+    color: black;
+  }
+  .sub-menu-1{
+    display: none}
+  .nav-items div a:hover .sub-menu-1{
+    color: white;
+    display:block;
+    position: absolute;
+    background: rgb(0,100,0);
+    margin-top: 15px;
+    margin-left: -15px;
+  }
+  .nav-items div:hover{
+    /* transition: 0.2s; */
+    font-weight: bold;
+    display:block;
+    position: absolute;
+    background: rgb(0,100,0);
+    margin-top: 15px;
+    margin-left: -15px;
+    
+  }
+  
+  /* .nav-items-link a:hover .sub-menu-1{
+    
+  } */
+
+.aboutUs-section{
+    height: 250px;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2em;
+    scroll-behavior: auto;
+}
+.aboutUs-section-item{
+    
+    box-shadow: 1px 1px 8px gray;
+    background-color: gainsboro;
+    border-radius: 15px;
+    width: 30%;
+}
+.aboutUs-section-heading{
+    color: #3F0678;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.2em;
+}
+.aboutUs-section-desc{
+    font-size: 1.2em;
+    padding: 0.2em;
+}
+.content-section{
+    width: 80%;
+    height: 700px;
+    margin: auto;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+.content-section h2{
+    text-decoration: underline;
+    
+}
+.content-image-box{
+    width: 70%;
+    margin: auto;
+    height: 400px;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    border-radius: 15px;
+}
+.content-image-box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.content{
+    width: 50%;
+    margin: auto;
+    margin-top: 0;
+    height: 500px;
+    box-shadow: 2px 2px 8px grey;
+}
+.content p{
+    margin: 1em;
+    font-size: 1.2em;
+}
+
+      </style>
+      <script>
+        function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+      </script>
+    {{!-- <script src="main.js"></script> --}}
+</body>
+
+</html>{{!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>GDSC Coding club</h1>
+    {{#info}}
+        <div>
+            <h4 name="message">{{message}}</h4>
+            {{#if url}}
+            <img src= {{url}} alt="url">
+            {{/if}}
+        </div>
+        {{/info}}
+    <form action="/clubs/gdsc" method="post" enctype="multipart/form-data">
+        <input type="text" name="message"><br/>
+        <input type="file" name="image" id="fileToUpload"><br/>
+        <button type="submit">post</button><br/>
+    </form>
+</body>
+</html> --}}
